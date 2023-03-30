@@ -1,6 +1,6 @@
 const Intro = () => {
   return (
-    <div className="font-body_alt">
+    <div className="flex flex-col font-body_alt" data-aos="fade-up">
       <h1 className="text-teal-small">Hola</h1>
       <div className="text-teal-small">
         Mi nombre es Jhonatan Rivera Saumeth soy Ingeniero de Sistemas y
