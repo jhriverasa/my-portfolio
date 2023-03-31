@@ -7,12 +7,12 @@ import { useEffect } from "react";
 
 // pages/_app.js
 
-import { Gajraj_One, Ubuntu, Open_Sans } from "next/font/google"; //fonts (check in tailwind.config.js )
+import { Luckiest_Guy, Ubuntu, Open_Sans } from "next/font/google"; //fonts (check in tailwind.config.js )
 
-const gajrajOne = Gajraj_One({
+const luckiestGuy = Luckiest_Guy({
   weight: "400",
-  subsets: ["latin"],
-  variable: "--font-gajraj",
+  subsets:['latin'],
+  variable: "--font-luckiestguy",
 });
 const opensans = Open_Sans({ variable: "--font-opensans", subsets: ["latin"] });
 const ubuntu = Ubuntu({
@@ -28,7 +28,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <main
-      className={`${gajrajOne.variable} ${ubuntu.variable} ${opensans.variable}`}
+      className={`${luckiestGuy.variable} ${ubuntu.variable} ${opensans.variable}`}
     >
       <Component {...pageProps} />
     </main>

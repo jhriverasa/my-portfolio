@@ -1,6 +1,6 @@
 const MeAndProgramming = () => {
   return (
-    <div className="flex flex-col text-teal-small h-36" data-aos="fade-up">
+    <div className="flex flex-col text-teal-small" data-aos="fade-up">
       <h1>Yo y la Programacion</h1>
 
       <div>

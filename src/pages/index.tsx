@@ -7,19 +7,20 @@ import WhyMe from "@/components/WhyMe";
 
 const Home = () => {
   return (
-    <div className=" flex flex-col w-full bg-oxford-blue">
+    <div className=" bg-slate-900 ">
       <NavBar />
       <Intro />
       <About />
       <MeAndProgramming />
+
       <Experience />
+
       <WhyMe />
 
-      {/*<div className="h-36">
-        <div className="w-1/2" data-aos="fade-up">
-          here
-        </div>
-  </div>*/}
+      <About />
+      <About />
+      <About />
+      <About />
     </div>
   );
 };

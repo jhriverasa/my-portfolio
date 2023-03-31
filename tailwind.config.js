@@ -19,7 +19,7 @@ module.exports = {
         "teal-small": "#57b3b1",
       },
       fontFamily: {
-        title: ["var(--font-gajraj)"],
+        title: ["var(--font-luckiestguy)"],
         body: ["var(--font-ubuntu)"],
         body_alt: ["var(--font-opensans)"],
       },
