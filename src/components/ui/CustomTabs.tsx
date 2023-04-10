@@ -44,7 +44,7 @@ const CustomTabs = (props: CustomTabsProps) => {
           {tabList.map((tab, i) => {
             return (
               <Tab
-                className="font-body text-slate-500"
+                className="font-body text-slate-500 lg:text-base md:text-md sm:text-sm"
                 label={tab.label}
                 key={`tab-${i}`}
                 {...a11yProps(i)}

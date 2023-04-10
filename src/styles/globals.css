@@ -2,19 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-body,html{
-    height: auto; /* This is applied by default, so it's not necessary to define it */
-    min-height: 100vh;
+body,
+html {
+  height: auto; /* This is applied by default, so it's not necessary to define it */
+  min-height: 100vh;
 }
 
-.text-stroke-black{
-    -webkit-text-stroke: 1px #9fc4f8;
+.text-stroke-black {
+  -webkit-text-stroke: 1px #9fc4f8;
 }
 
 /*Override Material UI*/
 .MuiTab-root.Mui-selected {
-    color: #149577;
-    -webkit-text-stroke: 1px #eff583;
-    font-weight: bold;
-    transition: 1100ms;
-  }
+  color: #149577;
+  -webkit-text-stroke: 1px #ebef92;
+  font-weight: bold;
+  transition: 1100ms;
+}
+
+.layout-container {
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+}

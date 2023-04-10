@@ -4,23 +4,23 @@ import About from "@/components/About";
 import MeAndProgramming from "@/components/MeAndProgramming";
 import Experience from "@/components/Experience";
 import WhyMe from "@/components/WhyMe";
+import Layout from "@/components/Layout";
 
 const Home = () => {
   return (
     <div className=" bg-slate-900 ">
       <NavBar />
-      <Intro />
-      <About />
-      <MeAndProgramming />
+      <Layout>
+        <Intro />
+        <About />
+        <MeAndProgramming />
 
-      <Experience />
+        <Experience />
 
-      <WhyMe />
+        <WhyMe />
 
-      <About />
-      <About />
-      <About />
-      <About />
+
+      </Layout>
     </div>
   );
 };

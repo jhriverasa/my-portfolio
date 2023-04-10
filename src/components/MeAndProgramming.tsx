@@ -3,7 +3,7 @@ const MeAndProgramming = () => {
     <div className="flex flex-col text-teal-small" data-aos="fade-up">
       <h1>Yo y la Programacion</h1>
 
-      <div>
+      <div className="text-justify">
         El mundo de la programación siempre me ha parecido interesante, la idea
         de automatizar cosas y hacer de los computadores no nuestros
         competidores sino nuestros mejores aliados a la hora de ayudarnos a
@@ -13,7 +13,7 @@ const MeAndProgramming = () => {
         tambien en la ciencia, en la investigación y un sinfín de actividades de
         las cuales se puede sacar provecho de las capacidades de un computador
       </div>
-      <div>
+      <div className="text-justify">
         Es por eso que la mitad de mi vida (15 años) la he dedicado a estudiar y
         a aprender tanto de manera autodidacta como dentro de una educación mas
         formal (Universidad), las herramientas que nos provee un computador.

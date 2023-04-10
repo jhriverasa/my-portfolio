@@ -3,7 +3,7 @@ const About = () => {
     <div className="flex flex-col text-teal-small" data-aos="fade-up">
       <h1>Quién soy ?</h1>
 
-      <div>
+      <div className="text-justify">
         Sin entrar en debates filosóficos podría decir que soy una persona
         motivada, autodidacta, con alta resiliencia, que busca constantemente
         aprender nuevas cosas, creo sinceramente, que para sortear las

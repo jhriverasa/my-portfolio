@@ -2,10 +2,10 @@ import CustomTabs, { CustomTabsProps } from "./ui/CustomTabs";
 
 const HelloBuildDescription = () => {
   return (
-    <div>
-      <div className="font-title tracking-wider">HELLOBUILD, LLC</div>
-      <div className="font-body">ENE 2020 – ENE 2021</div>
-      <div>
+    <div className="animate__animated animate__fadeIn">
+      <div className="font-title tracking-widest text-lg text-aquamarine">HELLOBUILD, LLC</div>
+      <div className="font-body italic font-bold ">Enero 2020 - Enero 2021</div>
+      <div className="py-2 font-body_alt text-justify text-teal-small ">
         Durante mi estadía en la empresa Hellobuild que me brindo mi primera
         oportunidad laboral, hice parte del grupo de trabajo de Protrak (una
         aplicación para la gestión de proyectos), desarrollando funcionalidades
@@ -22,10 +22,12 @@ const HelloBuildDescription = () => {
 
 const ScotiabankDescription = () => {
   return (
-    <div>
-      <div>SCOTIABANK</div>
-      <div>ABR 2022 – DEC 2022</div>
-      <div>
+    <div className="animate__animated animate__fadeIn">
+      <div className="font-title tracking-widest text-lg text-aquamarine">SCOTIABANK</div>
+      <div className="font-body italic font-bold">
+        Abril 2022 – Diciembre 2022
+      </div>
+      <div className="py-2 font-body_alt text-justify">
         Debido a mi curiosidad por las distintas tecnologías apliqué para hacer
         parte de un entrenamiento en Salesforce, el programa de Salesforce
         Academy de Scotiabank que buscaba capacitar a desarrolladores en
@@ -42,11 +44,11 @@ const ScotiabankDescription = () => {
 
 const custTabList = [
   {
-    label: "JAVASCRIPT FULL STACK DEVELOPER",
+    label: "JAVASCRIPT FULLSTACK DEV",
     component: <HelloBuildDescription />,
   },
   {
-    label: "SALESFORCE TRAINEE/DEVELOPER",
+    label: "SALESFORCE TRAINEE/DEV",
     component: <ScotiabankDescription />,
   },
 ];
