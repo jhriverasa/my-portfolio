@@ -41,6 +41,7 @@ const CustomTabs = (props: CustomTabsProps) => {
             sx: { backgroundColor: "#0E7C7B" },
           }}
         >
+          
           {tabList.map((tab, i) => {
             return (
               <Tab
