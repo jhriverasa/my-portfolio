@@ -8,7 +8,7 @@ html {
   min-height: 100vh;
 }
 
-.text-stroke-black {
+.text-stroke-slate {
   -webkit-text-stroke: 1px #9fc4f8;
 }
 
@@ -21,8 +21,15 @@ html {
 }
 
 .layout-container {
-  padding-left: 5vw;
-  padding-right: 5vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
   padding-top: 5vw;
   padding-bottom: 5vw;
+}
+
+.tagcloud--item:hover {
+  color: #149577;
+  -webkit-text-stroke: 1px #ebef92;
+  font-weight: bold;
+  transition: 100ms;
 }

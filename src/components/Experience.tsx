@@ -3,7 +3,9 @@ import CustomTabs, { CustomTabsProps } from "./ui/CustomTabs";
 const HelloBuildDescription = () => {
   return (
     <div className="animate__animated animate__fadeIn">
-      <div className="font-title tracking-widest text-lg text-aquamarine">HELLOBUILD, LLC</div>
+      <div className="font-title tracking-widest text-lg text-aquamarine">
+        HELLOBUILD, LLC
+      </div>
       <div className="font-body italic font-bold ">Enero 2020 - Enero 2021</div>
       <div className="py-2 font-body_alt text-justify text-teal-small ">
         Durante mi estadía en la empresa Hellobuild que me brindo mi primera
@@ -23,7 +25,9 @@ const HelloBuildDescription = () => {
 const ScotiabankDescription = () => {
   return (
     <div className="animate__animated animate__fadeIn">
-      <div className="font-title tracking-widest text-lg text-aquamarine">SCOTIABANK</div>
+      <div className="font-title tracking-widest text-lg text-aquamarine">
+        SCOTIABANK
+      </div>
       <div className="font-body italic font-bold">
         Abril 2022 – Diciembre 2022
       </div>
@@ -44,7 +48,7 @@ const ScotiabankDescription = () => {
 
 const custTabList = [
   {
-    label: "JAVASCRIPT FULLSTACK DEV",
+    label: "JS FULLSTACK DEV",
     component: <HelloBuildDescription />,
   },
   {
@@ -55,8 +59,13 @@ const custTabList = [
 
 const Experience = () => {
   return (
-    <div className="flex flex-col text-teal-small" data-aos="fade-up">
-      <h1>Experiencia</h1>
+    <div
+      className="flex flex-col text-teal-small border border-indigo-400 rounded-lg p-6 my-4"
+      data-aos="fade-up"
+    >
+      <div className="flex justify-center items-center mt-2 mb-4">
+        <div className="text-4xl font-title text-slate-900 text-stroke-slate">Experiencia</div>
+      </div>
       <div>
         <CustomTabs tabList={custTabList} />
       </div>

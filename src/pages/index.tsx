@@ -5,6 +5,7 @@ import MeAndProgramming from "@/components/MeAndProgramming";
 import Experience from "@/components/Experience";
 import WhyMe from "@/components/WhyMe";
 import Layout from "@/components/Layout";
+import SkillsCloud from "@/components/SkillsCloud";
 
 const Home = () => {
   return (
@@ -16,10 +17,9 @@ const Home = () => {
         <MeAndProgramming />
 
         <Experience />
+        <SkillsCloud />
 
         <WhyMe />
-
-
       </Layout>
     </div>
   );
