@@ -8,7 +8,7 @@ const About = () => {
         <div className="text-4xl font-title text-slate-900 text-stroke-slate">Quién soy ?</div>
       </div>
 
-      <p className="text-justify text-lg text-slate-400">
+      <p className="text-justify text-md text-slate-400">
         (Sin entrar en debates filosóficos) podría decir que soy una persona
         motivada, autodidacta, con alta resiliencia, que busca constantemente
         aprender nuevas cosas, creo sinceramente, que para sortear las

@@ -42,5 +42,7 @@ const skillsArray: string[] = [
   "NodeJS",
   "Salesforce",
   "Docker",
+  "GraphQL",
+  "Data Structures",
 ];
 export default SkillsCloud;

@@ -6,6 +6,7 @@ import Experience from "@/components/Experience";
 import WhyMe from "@/components/WhyMe";
 import Layout from "@/components/Layout";
 import SkillsCloud from "@/components/SkillsCloud";
+import SideBar from "@/components/sidebar/SideBar";
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
         <SkillsCloud />
 
         <WhyMe />
+        <SideBar />
       </Layout>
     </div>
   );

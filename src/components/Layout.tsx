@@ -4,7 +4,7 @@ interface LayoutProps {
 
 const Layout = (props: LayoutProps) => {
   const { children } = props;
-  return <div className="layout-container">{children}</div>;
+  return <div className="px-[11vw] py-[5vw]">{children}</div>;
 };
 
 export default Layout;

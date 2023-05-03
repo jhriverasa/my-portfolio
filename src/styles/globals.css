@@ -20,12 +20,6 @@ html {
   transition: 1100ms;
 }
 
-.layout-container {
-  padding-left: 10vw;
-  padding-right: 10vw;
-  padding-top: 5vw;
-  padding-bottom: 5vw;
-}
 
 .tagcloud--item:hover {
   color: #149577;
