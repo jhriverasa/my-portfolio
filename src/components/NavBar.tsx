@@ -15,12 +15,12 @@ const NavBar = () => {
         </div>
       </div>
 
-      <div className="animate__animated animate__rubberBand w-3/4 flex justify-end items-center font-title tracking-wider lg:text-2xl md:text-lg">
+      <div className=" w-3/4 flex justify-end items-center font-title tracking-wider lg:text-2xl md:text-lg">
         <NeonLink text="Sobre mi" href="#" />
         <NeonLink text="Experiencia" href="#" />
         <div className="relative flex justify-center items-center lg:w-12 lg:h-12 md:w-10 md:h-10 sm:w-8 sm:h-8 w-6 h-6">
           <Image
-            className=" hover:cursor-pointer"
+            className="hover:cursor-pointer"
             alt="Logo"
             src="/img/uk-flag.png"
             fill

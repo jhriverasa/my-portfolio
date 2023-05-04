@@ -7,6 +7,8 @@ import WhyMe from "@/components/WhyMe";
 import Layout from "@/components/Layout";
 import SkillsCloud from "@/components/SkillsCloud";
 import SideBar from "@/components/sidebar/SideBar";
+import Projects from "@/components/Projects";
+import Footer from "@/components/Footer";
 
 const Home = () => {
   return (
@@ -21,7 +23,9 @@ const Home = () => {
         <SkillsCloud />
 
         <WhyMe />
+        <Projects />
         <SideBar />
+        <Footer/>
       </Layout>
     </div>
   );

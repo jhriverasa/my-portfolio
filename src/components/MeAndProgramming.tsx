@@ -2,7 +2,9 @@ const MeAndProgramming = () => {
   return (
     <div
       className="flex flex-col text-teal-small border border-indigo-400 rounded-lg p-6 my-4"
-      data-aos="fade-up"
+      data-aos="flip-up"
+      data-aos-duration="750"
+      data-aos-delay="300"
     >
       <div className="flex justify-center items-center mt-2 mb-4">
         <div className="text-4xl font-title text-slate-900 text-stroke-slate ">Yo y la Programación</div>

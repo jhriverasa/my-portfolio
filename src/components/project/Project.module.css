@@ -1,0 +1,9 @@
+.project-container {
+    /*#11192e #0f1629*/
+  background-color: #11192e;
+}
+
+.project-container:hover {
+  transition: 300ms ease-in-out;
+  scale: 1.02;
+}
