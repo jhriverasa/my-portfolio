@@ -1,5 +1,11 @@
+import { LangConstantsType } from "@/constants";
+import { selectedLangState } from "../store/langSlice";
+import { useSelector } from "react-redux";
+
 import { TagCloud, TagCloudOptions } from "@frank-mayer/react-tag-cloud";
+
 const SkillsCloud = () => {
+  const lang = useSelector(selectedLangState);
   return (
     <div
       className="flex flex-col text-teal-small border border-indigo-400 rounded-lg p-6 my-4"
@@ -7,7 +13,7 @@ const SkillsCloud = () => {
     >
       <div className="flex justify-center items-center mt-2 mb-4">
         <div className="text-4xl font-title text-slate-900 text-stroke-slate">
-          Habilidades
+          {localCts.skills[lang]}
         </div>
       </div>
       <div className="flex justify-center font-bold font-body_alt text-2xl">
@@ -20,7 +26,6 @@ const SkillsCloud = () => {
           })}
           onClick={(tag: string, ev: MouseEvent) => console.log(tag)}
           onClickOptions={{ passive: true }}
-          
         >
           {skillsArray}
         </TagCloud>
@@ -46,3 +51,7 @@ const skillsArray: string[] = [
   "Data Structures",
 ];
 export default SkillsCloud;
+
+export const localCts: LangConstantsType = {
+  skills: { es: "Habilidades", en: "Skills" },
+};
