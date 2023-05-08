@@ -12,22 +12,20 @@ import Footer from "@/components/Footer";
 
 const Home = () => {
   return (
-    <div className=" bg-slate-900 ">
-      <NavBar />
-      <Layout>
-        <Intro />
-        <About />
-        <MeAndProgramming />
+    <Layout>
+      <Intro />
+      <About />
+      <MeAndProgramming />
 
-        <Experience />
-        <SkillsCloud />
+      <Experience />
+      <SkillsCloud />
 
-        <WhyMe />
-        <Projects />
-        <SideBar />
-        <Footer/>
-      </Layout>
-    </div>
+      <WhyMe />
+      <Projects />
+      
+      <Footer />
+      <SideBar />
+    </Layout>
   );
 };
 

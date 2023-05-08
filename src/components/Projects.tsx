@@ -84,11 +84,9 @@ const Projects = () => {
         >
           Axie Tools fue un proyecto que buscaba dar soporte para la toma de
           decisiones dentro de la comunidad de inversores/jugadores de Axie
-          Inifinity. Axie Infinity es videojuego en línea basado en la red de
-          cadena de bloques en NFT desarrollado y distribuido por el estudio
-          vietnamita​ Sky Mavis, el juego funciona dando recompensas, que son
-          los tokens del juego que utiliza la criptomoneda basada en Ethereum
-          AXS
+          Inifinity. Axie Infinity es un videojuego en línea basado blockchain
+          en NFT, el juego funciona dando recompensas, que son los tokens del
+          juego que utiliza la criptomoneda basada en Ethereum AXS
         </Project>
 
         <Project

@@ -2,15 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-body,
-html {
-  height: auto; /* This is applied by default, so it's not necessary to define it */
-  min-height: 100vh;
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #00ffc5 #0f172a;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #0f172a;
+
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #00ffc5;
+  border-radius: 5px;
+  border: 3px solid #11192e;
+}
+
+body {
+  margin: 0px;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
 }
 
 .text-stroke-slate {
   -webkit-text-stroke: 1px #9fc4f8;
 }
+
 
 /*Override Material UI*/
 .MuiTab-root.Mui-selected {
@@ -19,7 +42,6 @@ html {
   font-weight: bold;
   transition: 1100ms;
 }
-
 
 .tagcloud--item:hover {
   color: #149577;
