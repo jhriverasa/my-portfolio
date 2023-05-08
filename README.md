@@ -1,44 +1,5 @@
+## Personal Portfolio
+This is going to be my portfolio/cv web project, made in NextJS using Typescript
+And some cool libraries like AOS and Animate.css, tailwind, redux ... etc
 
-This is my portfolio web project, made in NextJS using Typescript
-
-  
-
-## Getting Started
-
-  
-
-First, run the development server:
-
-  
-
-```bash
-
-npm run  dev
-
-# or
-
-yarn dev
-
-# or
-
-pnpm dev
-
-```
-
-  
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-  
-
-
-
-  
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-  
-
-## Deployed on Vercel
-
-Under construction
+Still under construction
