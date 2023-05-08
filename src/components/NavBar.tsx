@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 
 import Image from "next/image";
 import NeonLink from "./ui/NeonLink";
+import { LangConstantsType } from "@/constants";
 
 const NavBar = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -49,8 +50,8 @@ const NavBar = () => {
       </div>
 
       <div className=" w-3/4 flex justify-end items-center font-title tracking-wider lg:text-2xl md:text-lg">
-        <NeonLink text="Sobre mi" href="#" />
-        <NeonLink text="Experiencia" href="#" />
+        <NeonLink text={localCts.about[lang]} href="#" />
+        <NeonLink text={localCts.experience[lang]} href="#" />
         <div
           className="relative flex justify-center items-center lg:w-12 lg:h-12 md:w-10 md:h-10 sm:w-8 sm:h-8 w-6 h-6"
           onClick={handleChangeLanguage}
@@ -67,6 +68,14 @@ const NavBar = () => {
   ) : (
     <></>
   );
+};
+
+export const localCts: LangConstantsType = {
+  about: { en: "About", es: "Sobre mi" },
+  experience: {
+    en: "Experience",
+    es: "Experiencia",
+  },
 };
 
 export default NavBar;
