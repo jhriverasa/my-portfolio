@@ -3,12 +3,12 @@ import { AppState } from "./store";
 import { HYDRATE } from "next-redux-wrapper";
 
 // Type for our state
-export interface LangState {
+export interface LangStateType {
   selectedLang: "es" | "en";
 }
 
 // Initial state
-const initialState: LangState = {
+const initialState: LangStateType = {
   selectedLang: "es",
 };
 
@@ -17,7 +17,7 @@ export const langSlice = createSlice({
   name: "lang",
   initialState,
   reducers: {
-    // Action to set the authentication status
+    // Action to set the language selected
     setSelectedLang(state, action) {
       state.selectedLang = action.payload;
     },
