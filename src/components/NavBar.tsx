@@ -18,8 +18,9 @@ const NavBar = () => {
     } else {
       setVisible(true);
     }
-
-    setPrevScrollPos(currentScrollPos);
+    setTimeout(() => {
+      setPrevScrollPos(currentScrollPos);
+    }, 500);
   };
 
   useEffect(() => {
@@ -39,19 +40,33 @@ const NavBar = () => {
       className={`top-0 animate__animated animate__fadeInDown animate__faster z-10 Right sticky shadow-sm shadow-indigo-400 bg-slate-900 text-teal flex  lg:justify-between lg:items-center px-[5vw]`}
     >
       <div className="w-1/4 flex  items-center">
-        <div className="relative flex lg:w-12 lg:h-12 md:w-10 md:h-10 sm:w-8 sm:h-8 w-6 h-6">
-          <Image
-            className=" hover:cursor-pointer"
-            alt="Logo"
-            src="/img/logo.png"
-            fill
-          />
-        </div>
+        <a rel="noopener" href={"#"}>
+          <div className="relative flex lg:w-12 lg:h-12 md:w-10 md:h-10 sm:w-8 sm:h-8 w-6 h-6">
+            <Image
+              className=" hover:cursor-pointer"
+              alt="Logo"
+              src="/img/logo.png"
+              fill
+            />
+          </div>
+        </a>
       </div>
 
       <div className=" w-3/4 flex justify-end items-center font-title tracking-wider lg:text-2xl md:text-lg">
-        <NeonLink text={localCts.about[lang]} href="#" />
-        <NeonLink text={localCts.experience[lang]} href="#" />
+        <NeonLink
+          text={localCts.projects[lang]}
+          href="#projects"
+          onClick={() => {
+            setVisible(false);
+          }}
+        />
+        <NeonLink
+          text={localCts.experience[lang]}
+          href="#experience"
+          onClick={() => {
+            setVisible(false);
+          }}
+        />
         <div
           className="relative flex justify-center items-center lg:w-12 lg:h-12 md:w-10 md:h-10 sm:w-8 sm:h-8 w-6 h-6"
           onClick={handleChangeLanguage}
@@ -75,6 +90,10 @@ export const localCts: LangConstantsType = {
   experience: {
     en: "Experience",
     es: "Experiencia",
+  },
+  projects: {
+    en: "Projects",
+    es: "Proyectos",
   },
 };
 

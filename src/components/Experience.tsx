@@ -7,7 +7,7 @@ import CustomTabs, { CustomTabsProps } from "./ui/CustomTabs";
 const HelloBuildDescription = () => {
   const lang = useSelector(selectedLangState);
   return (
-    <div className="animate__animated animate__fadeIn">
+    <div>
       <div className="font-title tracking-widest text-lg text-aquamarine">
         HELLOBUILD, LLC
       </div>
@@ -24,7 +24,7 @@ const HelloBuildDescription = () => {
 const ScotiabankDescription = () => {
   const lang = useSelector(selectedLangState);
   return (
-    <div className="animate__animated animate__fadeIn">
+    <div>
       <div className="font-title tracking-widest text-lg text-aquamarine">
         SCOTIABANK
       </div>
@@ -52,19 +52,19 @@ const custTabList = [
 const Experience = () => {
   const lang = useSelector(selectedLangState);
   return (
-    <div
+    <section
+      id="experience"
       className="flex flex-col text-teal-small border border-indigo-400 rounded-lg p-6 my-4"
-      data-aos="fade-up"
     >
-      <div className="flex justify-center items-center mt-2 mb-4">
+      <div className="flex justify-center items-center mt-2 mb-4 ">
         <div className="text-4xl font-title text-slate-900 text-stroke-slate">
           {localCts.experience[lang]}
         </div>
       </div>
-      <div>
+      <div data-aos="fade-up">
         <CustomTabs tabList={custTabList} />
       </div>
-    </div>
+    </section>
   );
 };
 

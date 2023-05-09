@@ -16,13 +16,10 @@ const Home = () => {
       <Intro />
       <About />
       <MeAndProgramming />
-
       <Experience />
       <SkillsCloud />
-
       <WhyMe />
       <Projects />
-      
       <Footer />
       <SideBar />
     </Layout>
