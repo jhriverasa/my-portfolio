@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-import { Box, Tab, Tabs } from "@mui/material";
-import Typography from "@mui/material/Typography";
+//alias Tabs
+import { Box, Tab, Tabs as MuiTabs } from "@mui/material";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -9,14 +9,14 @@ interface TabPanelProps {
   value: number;
 }
 
-export interface CustomTabsProps {
+export interface TabsProps {
   tabList: Array<{
     label: string;
     component: React.ReactNode;
   }>;
 }
 
-const CustomTabs = (props: CustomTabsProps) => {
+const Tabs = (props: TabsProps) => {
   const [selectedTab, setSelectedTab] = useState(0); //assume that array is not empty and select the first tab
   const { tabList } = props;
 
@@ -34,14 +34,13 @@ const CustomTabs = (props: CustomTabsProps) => {
   return (
     <div>
       <Box sx={{ borderBottom: 4, borderColor: "divider" }}>
-        <Tabs
+        <MuiTabs
           value={selectedTab}
           onChange={handleChange}
           TabIndicatorProps={{
             sx: { backgroundColor: "#0E7C7B" },
           }}
         >
-          
           {tabList.map((tab, i) => {
             return (
               <Tab
@@ -52,7 +51,7 @@ const CustomTabs = (props: CustomTabsProps) => {
               />
             );
           })}
-        </Tabs>
+        </MuiTabs>
       </Box>
       {tabList.map((tab, i) => {
         return (
@@ -87,4 +86,4 @@ function TabPanel(props: TabPanelProps) {
   );
 }
 
-export default CustomTabs;
+export default Tabs;

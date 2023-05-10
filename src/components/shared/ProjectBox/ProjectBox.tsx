@@ -1,10 +1,10 @@
-import ExternalLinkIcon from "../svg/ExternalLinkIcon";
-import FolderIcon from "../svg/FolderIcon";
-import GithubIcon from "../svg/GithubIcon";
+import ExternalLinkIcon from "@/components/svg/ExternalLinkIcon";
+import FolderIcon from "@/components/svg/FolderIcon";
+import GithubIcon from "@/components/svg/GithubIcon";
 
-import styles from "./Project.module.css";
+import styles from "./ProjectBox.module.css";
 
-export interface ProjectProps {
+export interface ProjectBoxProps {
   title: string;
   url: string;
   isExternalLink: boolean;
@@ -14,7 +14,7 @@ export interface ProjectProps {
   }>;
 }
 
-const Project = (props: ProjectProps) => {
+const ProjectBox = (props: ProjectBoxProps) => {
   return (
     <div
       className={
@@ -65,4 +65,4 @@ const Project = (props: ProjectProps) => {
   );
 };
 
-export default Project;
+export default ProjectBox;

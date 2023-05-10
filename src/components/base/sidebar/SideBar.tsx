@@ -1,9 +1,9 @@
 import styles from "./SideBar.module.css";
 
 import Image from "next/image";
-import LinkedinIcon from "../svg/LinkedinIcon";
-import GithubIcon from "../svg/GithubIcon";
-import MailIcon from "../svg/MailIcon";
+import LinkedinIcon from "../../svg/LinkedinIcon";
+import GithubIcon from "../../svg/GithubIcon";
+import MailIcon from "../../svg/MailIcon";
 
 const SideBar = () => {
   return (

@@ -1,14 +1,15 @@
-import NavBar from "@/components/NavBar";
-import Intro from "@/components/Intro";
-import About from "@/components/About";
-import MeAndProgramming from "@/components/MeAndProgramming";
-import Experience from "@/components/Experience";
-import WhyMe from "@/components/WhyMe";
-import Layout from "@/components/Layout";
-import SkillsCloud from "@/components/SkillsCloud";
-import SideBar from "@/components/sidebar/SideBar";
-import Projects from "@/components/Projects";
-import Footer from "@/components/Footer";
+import Footer from "@/components/base/Footer";
+import SideBar from "@/components/base/sidebar/SideBar";
+import Layout from "@/components/base/Layout";
+
+import Intro from "@/components/sections/Intro";
+import About from "@/components/sections/About";
+import MeAndProgramming from "@/components/sections/MeAndProgramming";
+import Experience from "@/components/sections/Experience";
+import WhyMe from "@/components/sections/WhyMe";
+import SkillsCloud from "@/components/sections/SkillsCloud";
+import Projects from "@/components/sections/Projects";
+
 
 const Home = () => {
   return (
@@ -16,13 +17,10 @@ const Home = () => {
       <Intro />
       <About />
       <MeAndProgramming />
-
       <Experience />
       <SkillsCloud />
-
       <WhyMe />
       <Projects />
-      
       <Footer />
       <SideBar />
     </Layout>
