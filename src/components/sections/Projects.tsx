@@ -110,8 +110,8 @@ export default Projects;
 export const localCts: LangConstantsType = {
   projects: { es: "Proyectos", en: "Projects" },
   intro: {
-    es: "Estos son algunos proyectos personales y particulares en los que he trabajado, debido a que para algunos el código es de uso privativo el link dirige al sitio en cuestión , o serán repositorios en estados tempranos:",
-    en: "These are some personal and particular projects in which I have worked, because for some the code is for private use, the link directs to the site in question, or they will be repositories in early stages:",
+    es: "Estos son algunos proyectos personales y particulares en los que he trabajado, debido a que para algunos el código es de uso privativo el link dirige al sitio en cuestión , o al repositorio en estados tempranos:",
+    en: "These are some personal and particular projects in which I have worked, because for some the code is for private use, the link directs to the site in question, or to the repository in early stages:",
   },
   wakfuFarmscript: {
     es: "Un script de python con Interfaz gráfica que permite a los jugadores de Wakfu recolectar recursos del juego de manera semi automatizada, haciendo uso de detección de objetos en imágenes.",
@@ -122,7 +122,7 @@ export const localCts: LangConstantsType = {
     en: "Protrak is a platform that allows you to manage projects, suppliers, customers, all in a unified dashboard, along with a feed that allows you to follow up on the project in detail.",
   },
   happypetsBackend: {
-    es: "Este es una solución de modelo de datos junto con diversos controladores que le dan vida al Backend para la HappyPets (una iniciativa de adopción mascotas) implementada en Ruby ON Rails, todo montado sobre una clásica arquitectura de 3 capas",
+    es: "Esta es una solución de modelo de datos junto con diversos controladores que le dan vida al Backend para la HappyPets (una iniciativa de adopción mascotas) implementada en Ruby ON Rails, todo montado sobre una clásica arquitectura de 3 capas",
     en: "This is a data model solution along with various controllers that bring to life the Backend for HappyPets (a pet adoption initiative) implemented in Ruby ON Rails, all built on a classic 3-tier architecture.",
   },
   axieTools: {
