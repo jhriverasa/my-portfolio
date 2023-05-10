@@ -1,8 +1,8 @@
 import { LangConstantsType } from "@/constants";
-import { selectedLangState } from "../store/langSlice";
+import { selectedLangState } from "@/store/langSlice";
 import { useSelector } from "react-redux";
 
-import Project from "./project/Project";
+import ProjectBox from "@/components/shared/ProjectBox/ProjectBox";
 
 const Projects = () => {
   const lang = useSelector(selectedLangState);
@@ -29,7 +29,7 @@ const Projects = () => {
         data-aos="fade-up"
         data-aos-duration="750"
       >
-        <Project
+        <ProjectBox
           title="Wakfu-farmscript"
           isExternalLink={false}
           url={"https://github.com/jhriverasa/wakfu-farmscript"}
@@ -41,8 +41,8 @@ const Projects = () => {
           ]}
         >
           {localCts.wakfuFarmscript[lang]}
-        </Project>
-        <Project
+        </ProjectBox>
+        <ProjectBox
           title="Protrak"
           isExternalLink
           url={"https://www.getprotrak.com/en/"}
@@ -56,8 +56,8 @@ const Projects = () => {
           ]}
         >
           {localCts.protrak[lang]}
-        </Project>
-        <Project
+        </ProjectBox>
+        <ProjectBox
           title="HappyPets-Backend"
           isExternalLink={false}
           url={"https://github.com/perceptronunal/PerceptronBackend"}
@@ -70,9 +70,9 @@ const Projects = () => {
           ]}
         >
           {localCts.happypetsBackend[lang]}
-        </Project>
+        </ProjectBox>
 
-        <Project
+        <ProjectBox
           title="Axie Tools"
           isExternalLink={false}
           url={"https://github.com/TitansTeamUN/axie-front"}
@@ -85,9 +85,9 @@ const Projects = () => {
           ]}
         >
           {localCts.axieTools[lang]}
-        </Project>
+        </ProjectBox>
 
-        <Project
+        <ProjectBox
           title="Google Kickstart Solutions"
           isExternalLink={false}
           url={"https://github.com/jhriverasa/google-kickstart-solutions"}
@@ -99,7 +99,7 @@ const Projects = () => {
           ]}
         >
           {localCts.googleKickstartSolutions[lang]}
-        </Project>
+        </ProjectBox>
       </div>
     </section>
   );

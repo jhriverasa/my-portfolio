@@ -1,8 +1,8 @@
 import { LangConstantsType } from "@/constants";
-import { selectedLangState } from "../store/langSlice";
+import { selectedLangState } from "@/store/langSlice";
 import { useSelector } from "react-redux";
 
-import CustomTabs, { CustomTabsProps } from "./ui/CustomTabs";
+import Tabs, { TabsProps } from "@/components/shared/Tabs/Tabs";
 
 const HelloBuildDescription = () => {
   const lang = useSelector(selectedLangState);
@@ -62,7 +62,7 @@ const Experience = () => {
         </div>
       </div>
       <div data-aos="fade-up">
-        <CustomTabs tabList={custTabList} />
+        <Tabs tabList={custTabList} />
       </div>
     </section>
   );

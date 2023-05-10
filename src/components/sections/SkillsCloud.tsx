@@ -1,5 +1,5 @@
 import { LangConstantsType } from "@/constants";
-import { selectedLangState } from "../store/langSlice";
+import { selectedLangState } from "@/store/langSlice";
 import { useSelector } from "react-redux";
 
 import { TagCloud, TagCloudOptions } from "@frank-mayer/react-tag-cloud";
