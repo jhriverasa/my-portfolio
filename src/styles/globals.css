@@ -14,7 +14,6 @@
 
 *::-webkit-scrollbar-track {
   background: #0f172a;
-
 }
 
 *::-webkit-scrollbar-thumb {
@@ -34,9 +33,8 @@ body {
   -webkit-text-stroke: 1px #9fc4f8;
 }
 
-
 /*Override Material UI*/
-.MuiTab-root.Mui-selected {
+[class*="Mui-selected"] {
   color: #ebef92;
   -webkit-text-stroke: 1px #ebef92;
   font-weight: 800;
