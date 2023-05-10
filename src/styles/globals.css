@@ -37,9 +37,9 @@ body {
 
 /*Override Material UI*/
 .MuiTab-root.Mui-selected {
-  color: #149577;
+  color: #ebef92;
   -webkit-text-stroke: 1px #ebef92;
-  font-weight: bold;
+  font-weight: 800;
   transition: 1100ms;
 }
 
