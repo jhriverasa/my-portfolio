@@ -1,42 +1,30 @@
-import { LangConstantsType } from "@/constants";
-import { selectedLangState } from "@/store/langSlice";
-import { useSelector } from "react-redux";
+import { LangConstantsType } from "@/constants"
+import { selectedLanguageState } from "@/redux/slices/languageSlice"
+import { useSelector } from "react-redux"
 
-import Tabs, { TabsProps } from "@/components/shared/Tabs/Tabs";
+import Tabs, { TabsProps } from "@/components/shared/Tabs/Tabs"
 
 const HelloBuildDescription = () => {
-  const lang = useSelector(selectedLangState);
+  const lang = useSelector(selectedLanguageState)
   return (
     <div>
-      <div className="font-title tracking-widest text-lg text-aquamarine">
-        HELLOBUILD, LLC
-      </div>
-      <div className="font-body italic font-bold ">
-        {localCts.hellobuildPeriod[lang]}
-      </div>
-      <div className="py-2 font-body_alt text-justify text-teal-small ">
-        {localCts.hellobuildParagraph[lang]}
-      </div>
+      <div className="font-title tracking-widest text-lg text-aquamarine">HELLOBUILD, LLC</div>
+      <div className="font-body italic font-bold ">{localCts.hellobuildPeriod[lang]}</div>
+      <div className="py-2 font-body_alt text-justify text-teal-small ">{localCts.hellobuildParagraph[lang]}</div>
     </div>
-  );
-};
+  )
+}
 
 const ScotiabankDescription = () => {
-  const lang = useSelector(selectedLangState);
+  const lang = useSelector(selectedLanguageState)
   return (
     <div>
-      <div className="font-title tracking-widest text-lg text-aquamarine">
-        SCOTIABANK
-      </div>
-      <div className="font-body italic font-bold">
-        {localCts.scotiabankPeriod[lang]}
-      </div>
-      <div className="py-2 font-body_alt text-justify">
-        {localCts.scotiabankParagraph[lang]}
-      </div>
+      <div className="font-title tracking-widest text-lg text-aquamarine">SCOTIABANK</div>
+      <div className="font-body italic font-bold">{localCts.scotiabankPeriod[lang]}</div>
+      <div className="py-2 font-body_alt text-justify">{localCts.scotiabankParagraph[lang]}</div>
     </div>
-  );
-};
+  )
+}
 
 const custTabList = [
   {
@@ -47,28 +35,23 @@ const custTabList = [
     label: "SALESFORCE TRAINEE/DEV",
     component: <ScotiabankDescription />,
   },
-];
+]
 
 const Experience = () => {
-  const lang = useSelector(selectedLangState);
+  const lang = useSelector(selectedLanguageState)
   return (
-    <section
-      id="experience"
-      className="flex flex-col text-teal-small border border-indigo-400 rounded-lg p-6 my-4"
-    >
+    <section id="experience" className="flex flex-col text-teal-small border border-indigo-400 rounded-lg p-6 my-4">
       <div className="flex justify-center items-center mt-2 mb-4 ">
-        <div className="text-4xl font-title text-slate-900 text-stroke-slate">
-          {localCts.experience[lang]}
-        </div>
+        <div className="text-4xl font-title text-slate-900 text-stroke-slate">{localCts.experience[lang]}</div>
       </div>
       <div data-aos="fade-up">
         <Tabs tabList={custTabList} />
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Experience;
+export default Experience
 
 export const localCts: LangConstantsType = {
   experience: { en: "Experience", es: "Experiencia" },
@@ -88,4 +71,4 @@ export const localCts: LangConstantsType = {
     es: "Abril 2022 – Diciembre 2022",
     en: "April 2022 – December 2022",
   },
-};
+}

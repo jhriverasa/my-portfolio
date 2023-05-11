@@ -1,11 +1,11 @@
 import { LangConstantsType } from "@/constants";
-import { selectedLangState } from "@/store/langSlice";
+import { selectedLanguageState } from "@/redux/slices/languageSlice"
 import { useSelector } from "react-redux";
 
 import ProjectBox from "@/components/shared/ProjectBox/ProjectBox";
 
 const Projects = () => {
-  const lang = useSelector(selectedLangState);
+  const lang = useSelector(selectedLanguageState);
   return (
     <section
       id="projects"

@@ -1,4 +1,4 @@
-import { selectedLangState } from "@/store/langSlice"
+import { selectedLanguageState } from "@/redux/slices/languageSlice"
 import { useSelector } from "react-redux"
 
 import styles from "./SideBar.module.css"
@@ -9,7 +9,7 @@ import MailIcon from "../../svg/MailIcon"
 import CurriculumIcon from "@/components/svg/CurriculumIcon"
 
 const SideBar = () => {
-  const lang = useSelector(selectedLangState)
+  const lang = useSelector(selectedLanguageState)
   return (
     <div
       className={`animate__animated animate__bounceInUp ${styles["sidebar-container"]} left-[1%] bottom-[6%] flex flex-col text-3xl `}

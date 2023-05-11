@@ -1,20 +1,15 @@
-import { LangConstantsType } from "@/constants";
-import { selectedLangState } from "@/store/langSlice";
-import { useSelector } from "react-redux";
+import { LangConstantsType } from "@/constants"
+import { selectedLanguageState } from "@/redux/slices/languageSlice"
+import { useSelector } from "react-redux"
 
-import { TagCloud, TagCloudOptions } from "@frank-mayer/react-tag-cloud";
+import { TagCloud, TagCloudOptions } from "@frank-mayer/react-tag-cloud"
 
 const SkillsCloud = () => {
-  const lang = useSelector(selectedLangState);
+  const lang = useSelector(selectedLanguageState)
   return (
-    <div
-      className="flex flex-col text-teal-small border border-indigo-400 rounded-lg p-6 my-4"
-      data-aos="fade-up"
-    >
+    <div className="flex flex-col text-teal-small border border-indigo-400 rounded-lg p-6 my-4" data-aos="fade-up">
       <div className="flex justify-center items-center mt-2 mb-4">
-        <div className="text-4xl font-title text-slate-900 text-stroke-slate">
-          {localCts.skills[lang]}
-        </div>
+        <div className="text-4xl font-title text-slate-900 text-stroke-slate">{localCts.skills[lang]}</div>
       </div>
       <div className="flex justify-center font-bold font-body_alt text-2xl">
         <TagCloud
@@ -31,8 +26,8 @@ const SkillsCloud = () => {
         </TagCloud>
       </div>
     </div>
-  );
-};
+  )
+}
 
 const skillsArray: string[] = [
   "Git",
@@ -49,9 +44,9 @@ const skillsArray: string[] = [
   "Docker",
   "GraphQL",
   "Data Structures",
-];
-export default SkillsCloud;
+]
+export default SkillsCloud
 
 export const localCts: LangConstantsType = {
   skills: { es: "Habilidades", en: "Skills" },
-};
+}

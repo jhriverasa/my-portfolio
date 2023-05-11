@@ -1,5 +1,5 @@
 import { LangConstantsType } from "@/constants"
-import { selectedLangState } from "@/store/langSlice"
+import { selectedLanguageState } from "@/redux/slices/languageSlice"
 import { useSelector } from "react-redux"
 import NextIcon from "@/components/svg/NextIcon"
 import ReactIcon from "@/components//svg/ReactIcon"
@@ -7,7 +7,7 @@ import TailwindIcon from "@/components//svg/TailwindIcon"
 import TypescriptIcon from "@/components//svg/TypescriptIcon"
 
 const Footer = () => {
-  const lang = useSelector(selectedLangState)
+  const lang = useSelector(selectedLanguageState)
   return (
     <div className=" flex flex-col rounded-lg px-6 mt-16 mb-8">
       <div className=" flex flex-col items-center justify-center">
