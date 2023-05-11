@@ -1,40 +1,40 @@
-import { useEffect } from "react";
+import { useEffect } from "react"
+import type { AppProps } from "next/app"
+import AOS from "aos"
 
-import "@/styles/globals.css";
-import "aos/dist/aos.css"; // Animations
+//redux
+import { store } from "@/redux/store"
+import { Provider } from "react-redux"
 
-import AOS from "aos";
-import type { AppProps } from "next/app";
-import { wrapper } from "../store/store";
+import "@/styles/globals.css"
+import "aos/dist/aos.css" // Animations
 
-// pages/_app.js
-
-import { Luckiest_Guy, Ubuntu, Open_Sans } from "next/font/google"; //fonts (check in tailwind.config.js )
+import { Luckiest_Guy, Ubuntu, Open_Sans } from "next/font/google" //fonts (check in tailwind.config.js )
 
 const luckiestGuy = Luckiest_Guy({
   weight: "400",
   subsets: ["latin"],
   variable: "--font-luckiestguy",
-});
-const opensans = Open_Sans({ variable: "--font-opensans", subsets: ["latin"] });
+})
+const opensans = Open_Sans({ variable: "--font-opensans", subsets: ["latin"] })
 const ubuntu = Ubuntu({
   weight: "400",
   variable: "--font-ubuntu",
   subsets: ["latin"],
-});
+})
 
 function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
-    AOS.init(); //Inititalize after component mounts
-  }, []);
+    AOS.init() //Inititalize after component mounts
+  }, [])
 
   return (
-    <main
-      className={`${luckiestGuy.variable} ${ubuntu.variable} ${opensans.variable}`}
-    >
-      <Component {...pageProps} />
-    </main>
-  );
+    <Provider store={store}>
+      <main className={`${luckiestGuy.variable} ${ubuntu.variable} ${opensans.variable}`}>
+        <Component {...pageProps} />
+      </main>
+    </Provider>
+  )
 }
 
-export default wrapper.withRedux(App);
+export default App

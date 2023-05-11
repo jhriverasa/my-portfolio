@@ -1,9 +1,9 @@
 import { LangConstantsType } from "@/constants"
-import { selectedLangState } from "@/store/langSlice"
+import { selectedLanguageState } from "@/redux/slices/languageSlice"
 import { useSelector } from "react-redux"
 
 const WhyMe = () => {
-  const lang = useSelector(selectedLangState)
+  const lang = useSelector(selectedLanguageState)
   return (
     <div className="flex flex-col text-teal-small border border-indigo-400 rounded-lg p-6 my-4" data-aos="fade-up">
       <div className="flex justify-center items-center mt-2 mb-4">
