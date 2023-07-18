@@ -44,7 +44,7 @@ const WhyMe = () => {
 export default WhyMe
 
 export const localCts: LangConstantsType = {
-  whyMe: { en: "Why should you choose me?", es: "Por qué deberían elegirme?" },
+  whyMe: { en: "Why should you choose me?", es: "Por qué deberías elegirme?" },
   autodidact: {
     en: "Self-taught person",
     es: "Autodidacta",
