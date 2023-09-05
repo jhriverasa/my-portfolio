@@ -1,34 +1,36 @@
-import { LangConstantsType } from "@/constants";
+import { LangConstantsType } from "@/constants"
 import { selectedLanguageState } from "@/redux/slices/languageSlice"
-import { useSelector } from "react-redux";
+import { useSelector } from "react-redux"
 
-import ProjectBox from "@/components/shared/ProjectBox/ProjectBox";
+import ProjectBox from "@/components/shared/ProjectBox/ProjectBox"
 
 const Projects = () => {
-  const lang = useSelector(selectedLanguageState);
+  const lang = useSelector(selectedLanguageState)
   return (
-    <section
-      id="projects"
-      className="flex flex-col text-teal-small border border-indigo-400 rounded-lg p-6 my-4"
-    >
+    <section id="projects" className="flex flex-col text-teal-small border border-indigo-400 rounded-lg p-6 my-4">
       <div className="animate__fadeIn flex justify-center items-center mt-2 mb-4 ">
-        <div className="text-4xl font-title text-slate-900 text-stroke-slate ">
-          {localCts.projects[lang]}
-        </div>
+        <div className="text-4xl font-title text-slate-900 text-stroke-slate ">{localCts.projects[lang]}</div>
       </div>
 
-      <p
-        className="animate__fadeIn text-justify text-md text-slate-400 "
-        data-aos="fade-up"
-        data-aos-duration="750"
-      >
+      <p className="animate__fadeIn text-justify text-md text-slate-400 " data-aos="fade-up" data-aos-duration="750">
         {localCts.intro[lang]}
       </p>
-      <div
-        className="flex flex-wrap justify-center"
-        data-aos="fade-up"
-        data-aos-duration="750"
-      >
+      <div className="flex flex-wrap justify-center" data-aos="fade-up" data-aos-duration="750">
+        <ProjectBox
+          title="Protrak"
+          isExternalLink={false}
+          url={"https://github.com/jhriverasa/PF"}
+          techList={[
+            { techName: "NodeJS" },
+            { techName: "ReactJS" },
+            { techName: "Tailwind" },
+            { techName: "GraphQL" },
+            { techName: "NextJS" },
+            { techName: "MySQL" },
+          ]}
+        >
+          {localCts.protrak[lang]}
+        </ProjectBox>
         <ProjectBox
           title="Wakfu-farmscript"
           isExternalLink={false}
@@ -41,21 +43,6 @@ const Projects = () => {
           ]}
         >
           {localCts.wakfuFarmscript[lang]}
-        </ProjectBox>
-        <ProjectBox
-          title="Protrak"
-          isExternalLink
-          url={"https://www.getprotrak.com/en/"}
-          techList={[
-            { techName: "NodeJS" },
-            { techName: "ReactJS" },
-            { techName: "Tailwind" },
-            { techName: "GraphQL" },
-            { techName: "NextJS" },
-            { techName: "MySQL" },
-          ]}
-        >
-          {localCts.protrak[lang]}
         </ProjectBox>
         <ProjectBox
           title="HappyPets-Backend"
@@ -102,10 +89,10 @@ const Projects = () => {
         </ProjectBox>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Projects
 
 export const localCts: LangConstantsType = {
   projects: { es: "Proyectos", en: "Projects" },
@@ -133,4 +120,4 @@ export const localCts: LangConstantsType = {
     es: "Google Kickstart fue competencia de código global, organizada por Google, que buscaba evaluar el uso de estructuras de datos y algoritmos de manera eficiente. Este es un proyecto personal que busca integrar todas las soluciones a los distintos problemas propuestos en cada una de las competencias realizadas.",
     en: "Google Kickstart was a global code competition, organized by Google, that sought to test the efficient use of data structures and algorithms. This is a personal project that seeks to integrate all the solutions to the different problems proposed in each of the competencies carried out.",
   },
-};
+}
