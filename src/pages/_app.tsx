@@ -2,9 +2,8 @@ import { useEffect } from "react"
 import type { AppProps } from "next/app"
 import AOS from "aos"
 
-//redux
 import { store } from "@/redux/store"
-import { Provider } from "react-redux"
+import { Provider as NextProvider } from "react-redux"
 
 import "@/styles/globals.css"
 import "aos/dist/aos.css" // Animations
@@ -29,11 +28,11 @@ function App({ Component, pageProps }: AppProps) {
   }, [])
 
   return (
-    <Provider store={store}>
+    <NextProvider store={store}>
       <main className={`${luckiestGuy.variable} ${ubuntu.variable} ${opensans.variable}`}>
         <Component {...pageProps} />
       </main>
-    </Provider>
+    </NextProvider>
   )
 }
 
